@@ -11,7 +11,15 @@ namespace Create_Table_project
     {
         public void CreateTable()
         {
-            
+            SqlConnection con = null;
+            try
+            {
+                con = new SqlConnection("data source=LAPTOP-OG8P1VHL\\HIJJAJ;database=ProdiTI;Integrated Security = TRUE");
+                con.Open();
+            } catch (Exception e)
+            {
+
+            }
         }
     }
 }
