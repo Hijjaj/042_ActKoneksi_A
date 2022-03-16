@@ -9,6 +9,10 @@ namespace Create_Table_project
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            new Program().CreateTable();
+        }
         public void CreateTable()
         {
             SqlConnection con = null;
